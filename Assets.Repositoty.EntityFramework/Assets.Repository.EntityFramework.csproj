@@ -47,12 +47,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AssetsManagerContext.cs" />
+    <Compile Include="BaseEntityConfiguration.cs" />
+    <Compile Include="Configuration\ApplicationUserConfiguration.cs" />
+    <Compile Include="Migrations\201808061359482_baseline.cs" />
+    <Compile Include="Migrations\201808061359482_baseline.Designer.cs">
+      <DependentUpon>201808061359482_baseline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Assets.Models\Assets.Models.csproj">
+      <Project>{7DA0DD5D-F90D-44DA-8F58-EBFA756AD64E}</Project>
+      <Name>Assets.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201808061359482_baseline.resx">
+      <DependentUpon>201808061359482_baseline.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
