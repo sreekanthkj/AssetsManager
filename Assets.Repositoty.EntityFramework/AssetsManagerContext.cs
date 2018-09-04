@@ -12,6 +12,7 @@ namespace Assets.Repositoty.EntityFramework
 {
     internal class AssetsManagerContext : DbContext
     {
+        //must add db sets for every entity, without which tables won't be created
         DbSet<ApplicationUser> User { get; set; }
 
         public AssetsManagerContext() : base("name=AssetsManagerContext") //specify name or full connectionstring here !!
@@ -23,7 +24,7 @@ namespace Assets.Repositoty.EntityFramework
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
-            //add congigurations 
+            //add configurations
             modelBuilder.Configurations.Add(new ApplicationUserConfiguration());
         }
     }

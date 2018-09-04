@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assets.Web", "Assets.Web\As
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assets.Services", "Assets.Services\Assets.Services.csproj", "{0512D1D9-D0D7-462C-B105-30D4EC89A4FC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8B457637-1428-4BDD-A651-A81628AD1231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assets.Services.Tests", "Assets.Services.Tests\Assets.Services.Tests.csproj", "{2102D750-BC82-4A65-B352-0B0D2CCD80DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,9 +43,16 @@ Global
 		{0512D1D9-D0D7-462C-B105-30D4EC89A4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0512D1D9-D0D7-462C-B105-30D4EC89A4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0512D1D9-D0D7-462C-B105-30D4EC89A4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2102D750-BC82-4A65-B352-0B0D2CCD80DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2102D750-BC82-4A65-B352-0B0D2CCD80DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2102D750-BC82-4A65-B352-0B0D2CCD80DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2102D750-BC82-4A65-B352-0B0D2CCD80DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2102D750-BC82-4A65-B352-0B0D2CCD80DC} = {8B457637-1428-4BDD-A651-A81628AD1231}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DD3C944-3571-4685-88C0-B70A60419849}
